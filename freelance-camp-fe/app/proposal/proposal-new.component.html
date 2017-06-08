@@ -15,7 +15,9 @@
                     #customer="ngModel"
                     [(ngModel)] ="proposal.customer"
             />
-            <div [hidden]="customer.valid || customer.pristine">
+            <div [hidden]="customer.valid || customer.pristine"
+                  class="alert alert-danger"
+            >
               Customer name is required
             </div>
           </div>
@@ -29,7 +31,8 @@
                     #portfolio_url="ngModel"
                     [(ngModel)] ="proposal.portfolio_url"
             />
-            <div [hidden]="portfolio_url.valid || portfolio_url.pristine">
+            <div [hidden]="portfolio_url.valid || portfolio_url.pristine"
+            class="alert alert-danger">
               Portfolio Url is required
             </div>
           </div>
@@ -44,7 +47,8 @@
                     #tools="ngModel"
                     [(ngModel)] ="proposal.tools"
             />
-            <div [hidden]="tools.valid || tools.pristine">
+            <div [hidden]="tools.valid || tools.pristine"
+            class="alert alert-danger">
               A list of tools is required
             </div>
           </div>
@@ -58,7 +62,8 @@
                     #estimated_hours="ngModel"
                     [(ngModel)] ="proposal.estimated_hours"
             />
-            <div [hidden]="estimated_hours.valid || estimated_hours.pristine">
+            <div [hidden]="estimated_hours.valid || estimated_hours.pristine"
+            class="alert alert-danger">
               You need to enter in your estimated hours
             </div>
           </div>
@@ -72,7 +77,8 @@
                     #hourly_rate="ngModel"
                     [(ngModel)] ="proposal.hourly_rate"
             />
-            <div [hidden]="hourly_rate.valid || hourly_rate.pristine">
+            <div [hidden]="hourly_rate.valid || hourly_rate.pristine"
+            class="alert alert-danger">
               You need to enter in your hourly rate
             </div>
           </div>
@@ -86,7 +92,8 @@
                     #week_to_complete="ngModel"
                     [(ngModel)] ="proposal.week_to_complete"
             />
-            <div [hidden]="week_to_complete.valid || week_to_complete.pristine">
+            <div [hidden]="week_to_complete.valid || week_to_complete.pristine"
+            class="alert alert-danger">
               You need to enter in how many weeks to complete the project
             </div>
           </div>
